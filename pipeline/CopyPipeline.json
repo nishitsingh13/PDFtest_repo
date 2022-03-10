@@ -1,17 +1,6 @@
 {
 	"name": "CopyPipeline",
 	"properties": {
-		"parameters": {
-			"test": {
-				"type": "string",
-				"defaultValue": "abc"
-			}
-		},
-		"variables": {
-			"test": {
-				"type": "String"
-			}
-		},
 		"annotations": []
 	}
 }
