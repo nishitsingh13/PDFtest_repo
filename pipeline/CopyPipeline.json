@@ -30,7 +30,8 @@
 					},
 					"fieldList": [
 						"columnCount",
-						"size"
+						"size",
+						"lastModified"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
@@ -54,7 +55,7 @@
 				"typeProperties": {
 					"variableName": "test",
 					"value": {
-						"value": "@activity('Get Metadata1').outputvariables('test')",
+						"value": "@activity('Get Metadata1').output.lastModified",
 						"type": "Expression"
 					}
 				}
