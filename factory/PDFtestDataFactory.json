@@ -1,9 +1,0 @@
-{
-	"name": "PDFtestDataFactory",
-	"location": "eastus",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "b6f71f3b-971d-47f6-8d5d-ba0d3d43dc8d",
-		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-	}
-}
