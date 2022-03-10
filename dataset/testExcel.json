@@ -5,6 +5,12 @@
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Usage": {
+				"type": "string",
+				"defaultValue": "Test"
+			}
+		},
 		"annotations": [],
 		"type": "Excel",
 		"typeProperties": {
