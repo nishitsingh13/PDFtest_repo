@@ -1,0 +1,19 @@
+{
+	"name": "testExcel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Teams.xlsx",
+				"container": "test"
+			}
+		},
+		"schema": []
+	}
+}
