@@ -17,6 +17,10 @@
 					{
 						"name": "Usage",
 						"value": "Test"
+					},
+					{
+						"name": "name",
+						"value": "hhhdhhhd"
 					}
 				],
 				"typeProperties": {
