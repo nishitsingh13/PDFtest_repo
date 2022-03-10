@@ -1,66 +1,6 @@
 {
 	"name": "CopyPipeline",
 	"properties": {
-		"activities": [
-			{
-				"name": "Get Metadata1",
-				"type": "GetMetadata",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [
-					{
-						"name": "Usage",
-						"value": "Test"
-					},
-					{
-						"name": "name",
-						"value": "hhhdhhhd"
-					}
-				],
-				"typeProperties": {
-					"dataset": {
-						"referenceName": "testExcel",
-						"type": "DatasetReference"
-					},
-					"fieldList": [
-						"columnCount",
-						"size",
-						"lastModified"
-					],
-					"storeSettings": {
-						"type": "AzureBlobStorageReadSettings",
-						"recursive": true,
-						"enablePartitionDiscovery": false
-					}
-				}
-			},
-			{
-				"name": "Set variable1",
-				"type": "SetVariable",
-				"dependsOn": [
-					{
-						"activity": "Get Metadata1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "test",
-					"value": {
-						"value": "@activity('Get Metadata1').output.lastModified",
-						"type": "Expression"
-					}
-				}
-			}
-		],
 		"parameters": {
 			"test": {
 				"type": "string",
