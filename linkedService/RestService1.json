@@ -1,0 +1,17 @@
+{
+	"name": "RestService1",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://gorest.co.in/public/v2/posts",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		},
+		"connectVia": {
+			"referenceName": "IntegrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

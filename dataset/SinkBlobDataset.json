@@ -1,0 +1,30 @@
+{
+	"name": "SinkBlobDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureStorageLinkedService1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@CONCAT(pipeline().RunId, '.txt')",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@pipeline().parameters.sinkBlobContainer",
+					"type": "Expression"
+				},
+				"container": "adfv2branch"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
