@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "workspacenishit"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"AzureStorageLinkedService_connectionString": {
+			"value": ""
+		},
+		"AzureStorageLinkedService1_connectionString": {
+			"value": ""
+		},
+		"workspacenishit-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://workstore1310.dfs.core.windows.net"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://gorest.co.in/public/v2/posts"
+		},
+		"workspacenishit-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://workstore1310.dfs.core.windows.net"
+		}
+	}
+}
