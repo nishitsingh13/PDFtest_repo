@@ -1,0 +1,7 @@
+{
+	"name": "gssprod-selfhosted-shir-01",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "Node-1 gssprod-gspwue2vmdfir01-vm-01  10.101.248.5\nNode-2 gssprod-gspwue2vmdfir02-vm-01  10.101.248.6\nNode-3 gssprod-gspwue2vmdfir03-vm-01  10.101.248.8\nNode-4 gssprod-gspwue2vmdfir06-vm-01  10.101.248.16"
+	}
+}
